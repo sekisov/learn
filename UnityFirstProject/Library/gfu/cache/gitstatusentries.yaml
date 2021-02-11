@@ -1,0 +1,120 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &1
+MonoBehaviour:
+  m_ObjectHideFlags: 61
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 995438498, guid: 68c7e4565cde54155bb78d8e935f1ddb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cacheType: 6
+  lastUpdatedAtString: 2021-02-09T19:11:03.149+03:00
+  initializedAtString: 2021-02-08T22:48:02.255+03:00
+  entries:
+  - path: Assets\Resources.meta
+    fullPath: D:\Project\.NET\Unity\UnityFirstProject\Assets\Resources.meta
+    projectPath: Assets\Resources.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Assets\Resources\Sphere.prefab
+    fullPath: D:\Project\.NET\Unity\UnityFirstProject\Assets\Resources\Sphere.prefab
+    projectPath: Assets\Resources\Sphere.prefab
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Assets\Resources\Sphere.prefab.meta
+    fullPath: D:\Project\.NET\Unity\UnityFirstProject\Assets\Resources\Sphere.prefab.meta
+    projectPath: Assets\Resources\Sphere.prefab.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Assets\Scenes\SampleScene.unity
+    fullPath: D:\Project\.NET\Unity\UnityFirstProject\Assets\Scenes\SampleScene.unity
+    projectPath: Assets\Scenes\SampleScene.unity
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Assets\Scripts\EnemyScript.cs
+    fullPath: D:\Project\.NET\Unity\UnityFirstProject\Assets\Scripts\EnemyScript.cs
+    projectPath: Assets\Scripts\EnemyScript.cs
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Assets\Scripts\EnemyScript.cs.meta
+    fullPath: D:\Project\.NET\Unity\UnityFirstProject\Assets\Scripts\EnemyScript.cs.meta
+    projectPath: Assets\Scripts\EnemyScript.cs.meta
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Assets\Scripts\Game.meta
+    fullPath: D:\Project\.NET\Unity\UnityFirstProject\Assets\Scripts\Game.meta
+    projectPath: Assets\Scripts\Game.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Assets\Scripts\Game\EnemyMoveScript.cs
+    fullPath: D:\Project\.NET\Unity\UnityFirstProject\Assets\Scripts\Game\EnemyMoveScript.cs
+    projectPath: Assets\Scripts\Game\EnemyMoveScript.cs
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Assets\Scripts\Game\EnemyMoveScript.cs.meta
+    fullPath: D:\Project\.NET\Unity\UnityFirstProject\Assets\Scripts\Game\EnemyMoveScript.cs.meta
+    projectPath: Assets\Scripts\Game\EnemyMoveScript.cs.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Assets\Scripts\Game\EnemyScript.cs
+    fullPath: D:\Project\.NET\Unity\UnityFirstProject\Assets\Scripts\Game\EnemyScript.cs
+    projectPath: Assets\Scripts\Game\EnemyScript.cs
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Assets\Scripts\Game\EnemyScript.cs.meta
+    fullPath: D:\Project\.NET\Unity\UnityFirstProject\Assets\Scripts\Game\EnemyScript.cs.meta
+    projectPath: Assets\Scripts\Game\EnemyScript.cs.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Assets\Scripts\Game\EnemySpawner.cs
+    fullPath: D:\Project\.NET\Unity\UnityFirstProject\Assets\Scripts\Game\EnemySpawner.cs
+    projectPath: Assets\Scripts\Game\EnemySpawner.cs
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Assets\Scripts\Game\EnemySpawner.cs.meta
+    fullPath: D:\Project\.NET\Unity\UnityFirstProject\Assets\Scripts\Game\EnemySpawner.cs.meta
+    projectPath: Assets\Scripts\Game\EnemySpawner.cs.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Assets\Scripts\Game\PlayerHelper.cs
+    fullPath: D:\Project\.NET\Unity\UnityFirstProject\Assets\Scripts\Game\PlayerHelper.cs
+    projectPath: Assets\Scripts\Game\PlayerHelper.cs
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Assets\Scripts\Game\PlayerHelper.cs.meta
+    fullPath: D:\Project\.NET\Unity\UnityFirstProject\Assets\Scripts\Game\PlayerHelper.cs.meta
+    projectPath: Assets\Scripts\Game\PlayerHelper.cs.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Assets\Scripts\PlayerHelper.cs
+    fullPath: D:\Project\.NET\Unity\UnityFirstProject\Assets\Scripts\PlayerHelper.cs
+    projectPath: Assets\Scripts\PlayerHelper.cs
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Assets\Scripts\PlayerHelper.cs.meta
+    fullPath: D:\Project\.NET\Unity\UnityFirstProject\Assets\Scripts\PlayerHelper.cs.meta
+    projectPath: Assets\Scripts\PlayerHelper.cs.meta
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
