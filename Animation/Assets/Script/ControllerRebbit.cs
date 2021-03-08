@@ -4,34 +4,59 @@ using UnityEngine;
 
 public class ControllerRebbit : MonoBehaviour
 {
+	public float Speed = 6.0f;
+	public float JumpValue = 8.0f;
+	public float Gravity = 20.0f;
+	private Vector3 moveDirection = Vector3.zero;
+	bool isdDeath = false;
 	enum PlayerStatus
 	{
-		Walk, 
+		Walk,
 		Rake,
 		Death
 	}
+	CharacterController controller;
 	// Start is called before the first frame update
 	void Start()
 	{
-
+		controller = GetComponent<CharacterController>();
 	}
 
 	// Update is called once per frame
 	void Update()
 	{
-		if (Input.GetMouseButtonDown(0))
+		if (!isdDeath)
 		{
-			GetComponent<Animator>().SetInteger("PlayerStatus", 0);
-			//GetComponent<Animator>().SetBool("Rake", true);
-		}
-		if (Input.GetMouseButtonDown(1))
-		{
-			GetComponent<Animator>().SetInteger("PlayerStatus", 1);
-			//GetComponent<Animator>().SetBool("Rake", false);
-		}
-		if (Input.GetKeyDown(KeyCode.Space))
-		{
-			GetComponent<Animator>().SetInteger("PlayerStatus", 2);
+			if (controller.isGrounded)
+			{
+				moveDirection = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
+				moveDirection = transform.TransformDirection(moveDirection);
+				moveDirection *= Speed;
+				if (Input.GetButton("Jump"))
+				{
+					moveDirection.y = JumpValue;
+				}
+				if (Input.GetAxis("Horizontal") != 0 || Input.GetAxis("Vertical") != 0)
+				{
+					GetComponent<Animator>().SetInteger("PlayerStatus", 0);
+				}
+				else
+				{
+					GetComponent<Animator>().SetInteger("PlayerStatus", 1);
+				}
+			}
+			moveDirection.y -= Gravity * Time.deltaTime;
+			controller.Move(moveDirection * Time.deltaTime);
+
+			if (Input.GetMouseButtonDown(1))
+			{
+				GetComponent<Animator>().SetInteger("PlayerStatus", 1);
+			}
+			if (Input.GetKeyDown(KeyCode.Q))
+			{
+				GetComponent<Animator>().SetInteger("PlayerStatus", 2);
+				isdDeath = true;
+			}
 		}
 	}
 }
