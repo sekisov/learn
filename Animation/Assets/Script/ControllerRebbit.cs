@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ControllerRebbit : MonoBehaviour
 {
@@ -8,7 +9,11 @@ public class ControllerRebbit : MonoBehaviour
 	public float JumpValue = 8.0f;
 	public float Gravity = 20.0f;
 	private Vector3 moveDirection = Vector3.zero;
+	public Text LblAppleCounter;
 	bool isdDeath = false;
+
+	private GameObject _target;
+	private int _counterApple = 0;
 	enum PlayerStatus
 	{
 		Walk,
@@ -57,6 +62,19 @@ public class ControllerRebbit : MonoBehaviour
 				GetComponent<Animator>().SetInteger("PlayerStatus", 2);
 				isdDeath = true;
 			}
+		}
+	}
+	void OnControllerColliderHit(ControllerColliderHit hit)
+	{
+		
+	}	
+	private void OnTriggerEnter(Collider other)
+	{
+		if (other.GetComponent<SphereCollider>())
+		{
+			LblAppleCounter.text = (++_counterApple).ToString();
+			_target = other.gameObject;
+			Destroy(_target, 1.0f);
 		}
 	}
 }
